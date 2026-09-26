@@ -4,8 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sdbyf</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex debitis excepturi consectetur laborum eius aperiam recusandae, quisquam asperiores, beatae accusamus voluptatum dolorem sint vero, hic reprehenderit nostrum adipisci necessitatibus assumenda saepe eveniet velit? Nemo ea non eius voluptatum beatae, labore, quasi molestiae voluptatem eveniet mollitia ducimus laboriosam eos placeat esse magnam reiciendis ullam deserunt recusandae tempora voluptate ex illo nisi! Fugiat fugit aliquam amet magni, iste temporibus labore odit sit incidunt fuga, in quam adipisci animi explicabo eum commodi accusantium eius vero expedita aspernatur corporis eaque! Sed iste optio consequuntur officia modi voluptatem dolor quidem. Harum dolorum repudiandae est tempore.
+     <header>
+        <div class="navbar">
+            <!-- website's logo  -->
+            <div class="logo">
+                <img class="logo-image"
+                    src="https://images-beta.tossdown.com/site/65b73fb7-2706-4440-87b9-9555fcd0ba80.webp" alt="logo">
+            </div>
+            <!-- navbar's items -->
+            <nav class="nav-items">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About Us</a>
+                <a href="./publications.html">Publication</a>
+                <button class="franchise-btn">Get a Franchise</button>
+                <button class="order-btn">Order Online <span class="icon"><i class="fa-solid fa-arrow-right"></i></span></button>
+            </nav>
+        </div>
+        <!-- Navbar for smaller layouts -->
+         <div class="mobile-navbar">
+            <div class="menu-icon-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <img class="logo-image logo-mobile-image"
+                    src="https://images-beta.tossdown.com/site/65b73fb7-2706-4440-87b9-9555fcd0ba80.webp" alt="logo">
+            </div>
+            <button class="order-btn order-btn-mobile">Order Online </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- page's content -->
+        <section class="carousel">
+            <img class="carousel-image"
+                src="https://static.tossdown.com/images/fa51cb9a-526f-409c-a8dd-1a30f322fc26.webp" alt="carousel-image">
+        </section>
+        <!-- brand's section -->
+        <section class="welcome-container">
+            <h1 class="welcome-heading">Welcome to <span class="futurak-font">Salt'n Pepper</span> <br />
+                Restaurants! Our Brands</h1>
+            <p class="welcome-para">Please click our brands below for further information, reservations or to order online!</p>
+
+            <div class="brands-parent">
+                <div class="brand-children">
+                    <img src="https://static.tossdown.com/site/8a66dd76-03d2-4b71-8d03-cf045f0248a7.webp" alt="brand-image" class="brand-image">
+                    <button class="brands-order-btn">Order now</button>
+                </div>
+                <div class="brand-children">
+                    <img src="https://static.tossdown.com/site/9d9cb355-ac8c-404e-a608-c28242343cd1.webp" class="brand-image">
+                    <button class="brands-order-btn">Order now</button>
+                </div>
+                <div class="brand-children">
+                    <img src="https://static.tossdown.com/site/f9238d0e-7c34-4139-a081-c57b7713628e.webp" alt="brand-image" class="brand-image">
+                    <button class="brands-order-btn">Order now</button>
+                </div>
+                <div class="brand-children">
+                    <img src="https://static.tossdown.com/site/8a66dd76-03d2-4b71-8d03-cf045f0248a7.webp" alt="brand-image" class="brand-image">
+                    <button class="brands-order-btn">Order now</button>
+                </div>
+            </div>
+        </section>
+
+
+
+    <section class="franchise-section">
+    <!-- Background logo -->
+    <div class="franchise-bg-logo">S</div>
+
+    <!-- Heading -->
+    <div class="franchise-heading">
+        <h2><span class="futurak-font">Salt'n Pepper</span>
+            <br> Restaurant Franchises</h2>
+        <p>Each of our franchises are individually managed. For further details, kindly contact them directly.</p>
+    </div>
+    <!-- Faisalabad -->
+    <div class="franchise-row">
+        <div class="franchise-image">
+            <img src="https://images-beta.tossdown.com/site/11771dbf-36a1-4684-a55e-18af61e0f77c.webp" alt="Salt'n Pepper Faisalabad">
+        </div>
+        <div class="franchise-content">
+            <h4>FAISALABAD</h4>
+            <h3><span class="futurak-font">Salt'n Pepper</span>Restaurant
+            </h3>
+            <p><i class="fa-solid fa-location-dot"></i>
+                4-Kohinoor City, Faisalabad</p>
+            <p><i class="fa-solid fa-phone"></i>
+                Ph: 041-8711404</p>
+            <a href="#" class="direction-btn">
+                Get Directions<span><i class="fa-solid fa-arrow-right"></i></span></a>
+        </div>
+    </div>
+
+
+    <!-- Bahawalpur -->
+    <div class="franchise-row reverse">
+        <div class="franchise-image">
+            <img src="https://images-beta.tossdown.com/site/b2f78afe-11e4-4af5-8aef-cff9c2908614.webp" alt="Salt'n Pepper Bahawalpur">
+        </div>
+
+        <div class="franchise-content">
+            <h4>BAHAWALPUR</h4>
+            <h3><span class="futurak-font">Salt'n Pepper</span>
+                Restaurant</h3>
+            <p><i class="fa-solid fa-location-dot"></i>
+                D.C Chowk, opposite Commissioner House, Bahawalpur</p>
+            <p><i class="fa-solid fa-phone"></i>
+                Ph: 062-2740271-2</p>
+            <a href="#" class="direction-btn">
+                Get Directions
+                <span><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+        </div>
+    </div>
+    </section>
+
+
+
 </body>
 </html>

@@ -1,0 +1,349 @@
+:root{
+    --red: #ed1c24;
+    --green: #28a745;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('../assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf');
+}
+@font-face {
+    font-family: Futurak;
+    src: url('../assets/fonts/futurak/futurak.TTF');
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: Inter;
+}
+
+/* Navbar's styling */
+.logo-image{
+    width: 165px;
+}
+
+.nav-items{
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.nav-items > a {
+    color: var(--white);
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 92px;
+    padding: 8px 0px 8px 0px;
+}
+.franchise-btn{
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.order-btn{
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.icon{
+    background-color: var(--white);
+    padding: 6px 5px;
+    border-radius: 20px;
+    color: var(--red);
+    margin-left: 3px;
+}
+
+
+/* For smaller layouts */
+.menu-icon{
+    color: var(--white);
+    font-size: 3rem;
+    display: none;
+}
+
+.menu-icon-mobile{
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.mobile-navbar{
+    
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 30px;
+    display: none;
+}
+
+.order-btn-mobile{
+    font-size: 1.2rem;
+}
+
+
+
+/* carousel started */
+.carousel-image{
+    width: 100%;
+}
+
+/* welcome container started */
+.welcome-container{
+    display: block;
+    width: 100%;
+    padding: 0px 15px 135px 15px;
+    padding-top: 70px;
+    position: relative;
+    overflow: hidden;
+}
+.welcome-heading{
+    font-weight: 500;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.futurak-font{
+    font-family: Futurak;
+    font-size: 5.2rem;
+
+}
+
+.welcome-para{
+    font-family: 'Apercu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.brands-order-btn{
+    background-color: transparent;
+    border: 1px solid #FFFFFFB3;
+    border-radius: 30px;
+    color: #FFFFFFB3;
+    font-size: 1.5rem;
+    padding: 10px 60px;
+}
+.brand-children{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    gap: 34px;
+}
+.brand-children img{
+    background-color: #ffffff;
+    padding: 30px 15px;
+}
+.brand-image{
+    background-color: var(--white);
+    border-radius: 5px;
+}
+.brands-parent{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Franchise Section */
+
+.franchise-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    padding: 55px 0 80px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* Bacakground logo */
+.franchise-bg-logo {
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    font-family: Futurak;
+    font-size: 650px;
+    line-height: 0.8;
+    color: rgba(255, 255, 255, 0.035);
+    z-index: 0;
+    pointer-events: none;
+}
+/* Main heading */
+.franchise-heading {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 65px;
+}
+.franchise-heading h2 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+}
+.franchise-heading h2 .futurak-font {
+    font-family: Futurak;
+    font-size: 65px;
+    font-weight: normal;
+}
+.franchise-heading p {
+    margin: 22px 0 0;
+    font-family: 'Apercu', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/*  Franchise first row */
+
+.franchise-row {
+    position: relative;
+    z-index: 1;
+    width: 84%;
+    max-width: 1535px;
+    margin: 0 auto 80px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.franchise-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* First row's image */
+
+.franchise-image {
+    width: 50%;
+}
+
+.franchise-image img {
+    display: block;
+    width: 100%;
+    height: 335px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+/* first rows content  */
+.franchise-content {
+    width: 50%;
+    padding: 0 5px;
+}
+
+
+/* City Name */
+
+.franchise-content h4 {
+    margin: 0 0 20px;
+    font-family: 'Apercu', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    color: #ed1c24;
+}
+
+
+/* heading and restrauant title */
+
+.franchise-content h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 35px;
+    font-family: 'Apercu', Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.franchise-content h3 .futurak-font {
+    font-family: Futurak;
+    font-size: 40px;
+    white-space: nowrap;
+}
+
+
+/* Adress and phone */
+.franchise-content p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 15px;
+    font-family: 'Apercu', Arial, sans-serif;
+    font-size: 22px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.72);
+}
+.franchise-content p i {
+    width: 20px;
+    font-size: 23px;
+    text-align: center;
+    color: #d8d8d8;
+}
+
+/* Direction button */
+
+.direction-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 290px;
+    height: 60px;
+    margin-top: 65px;
+    padding: 0 10px 0 42px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 35px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 19px;
+}
+.direction-btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #ed1c24;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+}
